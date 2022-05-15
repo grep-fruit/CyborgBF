@@ -1,0 +1,127 @@
+Header :
+-grossir la police + bold
+-alligner les onglets du nav vers la droite avec la bonne quantité d'espacement
+-décisions pour current et hover (un des deux glow, l'autre change de couleur + glow)
+-contraste de couleur avec le background (utiliser des drop shadow si possible)
+-alléger la bannière
+
+Header plus petit écran :
+-onglets du nav centrés
+-placement de la bannière
+-titre centré
+
+
+Footer :
+-3 colonnes : poème, logo, infos contact
+-background image
+
+Main : Art :
+H1 centré
+h2/3 allignés
+
+
+nav, footer et sections 2/3 1/3 = FLEXBOX
+images stickers et prints : grid
+
+
+
+
+
+
+dans la page about : si vous voulez collab. etc
+
+
+
+sections :
+- Accueil (trouver un meilleur nom) :
+    -un petit poème (irrévérent) et une grande image en haut et quelques autres petites ailleurs
+    -petite bio :
+      artiste, poète triste (pas sérieux), qui fait des zines pas mal diy mais avec beaucoup de perfectionisme lol, des illustrations et art visuel et digital, queerness, influences philosophiques, haraway, memes, théorie sur les cyborgs, mais organiquement et métaphoriquement. basé à mtl, land acknowledgment, art local, où me trouver à montréal, a quebec, à rdl?
+
+    -fonctionnement du site/boutique :
+      ça sert à ce que vous puissiez directement me commander des choses sans passer par aucune plateforme intermédiaire, si vous êtes au canada, presque tout ce que je fais peut s'envoyer dans une enveloppe postale ordinaire. Donnez moi quelques jours pour get around to ship. vous pouvez toujours poser vos questions dans le courriel ou même demander des grandeurs spécifiques, etc. (si vous avez une demande spéciale a partir de de quoi qui est sur mon instagram ou sur ce site, essayez vous) Envoyez moi un courriel (préférablement) ou un DM instagram. vous pouvez aussi trouver la plupart de ces choses sur etsy mais vous avez à payer le shipping. sur threadless il y a des choses différentes et c'est pas produit de la même façon. vous pouvez aussi me demander d'ajouter des choses à la boutique. Vous pouvez trouver mes trucs à plusieurs endroits à montréal (et me demander de les dropper là/venir les chercher)
+
+    - liens vers autres plateformes
+
+    - quelques quotes de mes poètes/auteur-es pref pour la déco, ou des phrases catchy
+
+- Stickers & prints
+    - infos générales : comment commander, les zines sont dans l'autre onglet, je fais aussi d'autres bébelles mais elles se shippent mal. préciser que je fais un prix si vous achetez bcp de choses ou si vous
+    - stickers : tous sont imprimés sur vinyle, fait à partir de dessins ou designs originaux sauf quand précisé autrement. les dimensions varient d'une    batch à l'autre. 4 pour 12 shipping gratuit?
+      grid x4 (avec titre prix et dimensions) (sur laquelle on peut cliquer pour voir les images grandes)
+      sticker packs (donc possibilité de click through les photos?)
+    - prints : tous sont sur du carton... et dispo en 3 grandeurs : (mesurer) petit : prix, moyens : prix, grands : prix + spécification shipping. je peux prendre des demandes spéciales.
+      grid x4 avec les images elles memes et non des photos des prints, joindre quelques exemples en bas des prints imprimés
+
+- Zines et poèmes
+    - zines :
+    je fais des zines, en général je les réimprime quelques fois avant qu'ils soient écoulés (ils sont écoulés quand je me tanne de leur contenu et que j'arrête de les réimprimer), mes vieilles affaires sont gênantes, mes nouvelles affaires sont weird, mais plus divertissantes. pour les avoir, même chose que les autres.
+      réutiliser la même grid, mais chaque est un lien vers une mini-page avec quelques photos et un abstract
+    - poèmes :
+    quelques poèmes pour vous (liens vers pages uniques qui ont juste un lien de retour)
+
+- liens et contact
+  - pour me contacter : (insta et email principalement)
+  -re-bio mais différente
+
+  - liens qui ont rapport :
+      - publications : (post, l'escouade, cavales), mentions d'académismes sans détails
+      - boutiques en ligne et médias sociaux
+  - liens que j'ai envie de partager
+      - pdfs, sites, éducations, blogs littéraires weird, vidéos youtube, whatever
+        (idées : stone butch blues, le cyborg manifesto, les blogs de poésie de certaines personnes cool, une conférence youtube de haraway, des infos sur l'open source et l'internet et la technologie libre, libgen?, how to torrent if you missed the limewire era?, le XF manifesto avec un warning critique, des liens vers ce que font certain-es de mes ami-es)
+  - un peu plus d'info de contexte? et de skills si jamais les gens veulent m'engager lol. genre je prends les commandes
+  - de l'info sur le site lui même, genre le JS est pas intrusif (ne sert qu'au hamnav (?), au click through des images, et a quelques tricks et surprises que je trouve drôles parce que moi j'ai rejoint l'internet l'année dernière alors c'est pas encore vieux pour moi), etc
+
+(liste des publications, infos genre je sais faire des sites internets pis du graphisme, etsy, threadless, réflexion sur l'hégémonie des médias sociaux sur l'internet, ressources que j'ai envie de partager au monde, petite bio avec une photo genre, je crois pas au copyright but plz dont steal my stuff, répétition de où trouver mes affaires, invitation à m'écrire des choses intéressantes, d'autres expériences, genre designer de la merch pour le cagibi ou whatever, ou les sites que j'ai faits pour d'autre monde. on pourrait avoir des sites différents pour toutes ces choses mais nous sommes des êtres complexes et tout est lié)
+es tu un artiste qui veut pas un site compliqué mais qui voudrait quelque chose qui ressemble pas mal à ca mais personnalisé? écris moi
+ce site a été fait entièrement from scratch, en écoutant de la musique emo d'il y a 15 ans pis des playlists de lofi, à partir de des informations disponibles gratuitement sur youtube. u can do the same or i can do it for u (you don't have to be an artist)
+
+
+des tricks de JS drôles
+les choses changent de couleur quand tu hover sans que ce soit important, un ou 2 random points dans le site font apparaitre des easter eggs si tu hover
+
+youre telling me a queer coded this : lien vers portfolio externe
+
+
+
+
+
+
+
+irreverent like
+
+a very young child
+playing tag (?)
+at a funeral
+
+a cat licking its ass (?)
+right in front of the guests
+on the dinner table
+
+an algorithm
+unbothered (?)
+by the captcha
+
+
+site de l'ATE : même template, mais seulement 3 pages (index : présentation et plusieurs photos, gallerie de photos et vidéos, et...?)
+
+
+poème à remettre quelque part sur le site (peut etre dans le about ou dans le footer si je le fais plus compliqué):
+
+<!-- <div class="half poeme">
+  <p>irrévérent comme </p>
+
+  <p>un très jeune enfant <br>
+  qui joue à la tag <br>
+  pendant des funérailles <br> </p>
+
+  <p>un chat qui se lave le cul <br>
+  sur la table à manger <br>
+  devant la visite <br> </p>
+
+  <p>un algorithme <br>
+  qui hausse les épaules <br>
+  face au captcha</p>
+</div> -->
+<!-- le poème va attendre -->
