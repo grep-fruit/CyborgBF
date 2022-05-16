@@ -1,0 +1,263 @@
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/*
+basic text color : 0fc900 (bright green)
+light text color : 6dff4b (lighter green?)
+low contrast (dark) text color : #171717 (gris très foncé)
+grey : (un gris très pâle et un gris moyen)
+peut être un bleu pour les highlights? ou orange si wild
+
+background : noir, peut-être gris/texturé pour des sections
+boutons en vert contrastant qui fitte dans la palette
+
+couleurs de travail : gris foncé #171717, gris pâle #969696
+ */
+
+ /*
+ pixel operator :
+ref : https://fontlibrary.org/en/font/pixel-operator
+Standard : PixelOperatorRegular
+Standard bold : PixelOperatorBold
+Autre forme de bold : PixelOperatorHBRegular
+Mono (texte plus espacé) :PixelOperatorMonoRegular
+Même chose mais bold : PixelOperatorMonoHBRegular
+Texte ++ espacé : PixelOperatorMono8Regular
+
+Standard petites majuscules : PixelOperatorSCRegular
+Petites majuscules bold : PixelOperatorHBSCRegular
+
+  */
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #000;
+  color : #0fc900;
+  font-family: 'PixelOperatorRegular';
+  line spacing : 2rem;
+}
+
+main {
+  padding: 0 5% 5%;
+}
+
+img {
+  width: 100%;
+  border: 1px solid #0fc900;
+}
+
+
+/* ********************** text styles */
+
+a {
+  color : #0fc900;
+  text-decoration: none;
+  font-family: 'PixelOperatorMonoHBRegular';
+}
+
+a:hover{
+  color : #6dff4b;
+}
+
+.current a {
+  color : #6dff4b;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-family: 'PixelOperatorMonoHBRegular';
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'PixelOperatorMonoHBRegular';
+  padding : 3%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding : 2%;
+}
+
+h4 {
+  font-size: 1.25rem;
+  padding : 1%;
+}
+
+p {
+  padding : 1%;
+}
+
+.rightAll {
+  text-align: right;
+}
+
+.leftAll {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* *********************header */
+
+
+#header {
+  background-image: url("banner2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.header {
+  padding: 2.5rem 5%;
+}
+
+nav {
+  height : 4rem;
+  padding : 1.5rem 5%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-left: 5%;
+}
+
+
+
+/* couleurs et contraste : revoir à la fin */
+
+/* ********************** footer */
+
+footer {
+  background-color: #171717;
+  padding: 2% 5%;
+  background-image: url("footer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+footer ul {
+  padding-top: 1.5rem;
+}
+
+
+
+
+
+/* ******************GRID */
+
+.grid-container {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap : 1.5rem;
+}
+
+/* ***************** flexbox */
+
+.flex-container {
+  display: flex;
+  flex-direction : row;
+  justify-content: space-between;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.flex-2 {
+  flex : 2;
+}
+
+.flex-1 {
+  flex: 1;
+  align-self: center;
+}
+
+.imgmeduso {
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 200px;
+}
+
+
+/*
+autre trucs de layout à faire :
+
+-réviser textes
+-liens vers librairies et contact
+-relire pour best practices/clean up
+-reformat/choix/taille image méduso
+-media queries index (3 tailles)
+
+
+ensuite :
+-page anglais (exactement la même chose mais en anglais)
+-page Infos (écrire textes, layout semblable mais adapté)
+etc
+
+ */
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* media queries */
+
+header {
+
+}
+
+footer {
+
+}
