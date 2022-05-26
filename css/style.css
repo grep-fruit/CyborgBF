@@ -75,6 +75,8 @@ main {
 img {
   width: 100%;
   border: 1px solid #0fc900;
+  display: block;
+  margin: auto;
 }
 
 
@@ -148,6 +150,60 @@ p {
   padding-left: 7rem;
 }
 
+.halftab {
+  padding-left: 1rem;
+}
+
+/* ************forms et boutons */
+
+label {
+  font-family: 'PixelOperatorMonoHBRegular';
+  font-size: 1.25rem;
+  display: inline-block;
+  padding-left: 5%;
+}
+
+input, textarea {
+  background-color: #6dff4b;
+  border: none;
+  resize : vertical;
+}
+
+input {
+  height: 1.25rem;
+  width: 50%;
+}
+
+textarea {
+  width: 90%;
+  display: block;
+  margin:auto;
+}
+
+.formLine {
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+  outline : none;
+  border: 2px solid #0fc900;
+}
+
+
+input[type=submit]{
+  background-color: #0fc900;
+  font-family: 'PixelOperatorMonoHBRegular';
+  font-size: 1.25rem;
+  height: 1.5rem;
+  width: 8rem;
+  display: block;
+  margin: auto;
+}
+
+input[type=submit]:hover{
+  background-color: #6dff4b;
+}
 
 
 /******************************************
@@ -217,6 +273,13 @@ footer ul {
   gap : 1.5rem;
 }
 
+.grid-container-hor {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap : 1.5rem;
+}
+
+
 /* ***************** flexbox */
 
 .flex-container {
@@ -252,6 +315,24 @@ footer ul {
   border : none;
 }
 
+
+/* ***********autres */
+.poeme {
+  display: block;
+  margin: auto;
+  font-size: 1.5rem;
+}
+/* pourquoi ça marche pas?? */
+.web {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.half {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
 
 /*
 autre trucs de layout à faire :
@@ -293,9 +374,21 @@ etc
     display : block;
   }
 
+  .half {
+    width: 100%;
+  }
+
   #header h1{
     max-width: 20rem;
     margin: auto 0 auto auto;
+  }
+
+  img {
+    margin-top: 2rem;
+  }
+
+  .round{
+    margin-top: 2rem;
   }
 
   header {
@@ -338,6 +431,13 @@ etc
     flex-direction: row;
     justify-content: space-around;
   }
+
+  .web {
+    width: 85%;
+    margin-left: 15%;
+  }
+
+
 
 /* vérifier que ça marche sur un vrai petit écran de cell */
 
