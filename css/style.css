@@ -154,6 +154,10 @@ p {
   padding-left: 1rem;
 }
 
+.out {
+  text-decoration: line-through;
+}
+
 /* ************forms et boutons */
 
 label {
