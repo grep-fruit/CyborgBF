@@ -4,6 +4,8 @@ For now I've kept it pretty simple.
 Todo : 
 technical:
 uniformize css classes
+add fallback fonts
+translate images alt text
 create slideshows and make images enlargeable
 solve key stuff
 
