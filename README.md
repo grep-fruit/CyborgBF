@@ -10,8 +10,11 @@ I'm putting this here so that you can look at it, if you want.
 (keeping this just so that I feel accountable and actually get around to it)
 
 Add a Gallery tab with a gallery of different stuff I made
+
 Change "Art" tab name to "shop"
+
 Fix the "clicktoenlarge" so that it is centered properly
+
 Add clicktrough slides for stickers/prints/zines
 
 ### Licencing stuff
