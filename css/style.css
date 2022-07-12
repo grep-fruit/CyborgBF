@@ -55,9 +55,13 @@ main {
 
 img {
   width: 100%;
-  border: 1px solid #0fc900;
+  border: 2px groove #0fc900;
   display: block;
   margin: auto;
+}
+
+.clicktoenlarge:hover {
+  box-shadow: 0 0 7px #0fc900;
 }
 
 .padding-top {
