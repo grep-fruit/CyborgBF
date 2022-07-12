@@ -10,9 +10,12 @@ solve key stuff
 content:
 add info about how i do my art, and stuff on the about page
 add link to this page (after things are corrected)
+remove round images at bottom of index
 
 structural:
 add a gallery page with hand drawn art
+restructure with more info in the about, and the poetry in a different tab
 
 fun/aesthetic : 
 add cool light effects
+make custom cursor
