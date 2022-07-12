@@ -5,20 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -27,17 +13,10 @@
 basic text color : 0fc900 (bright green)
 light text color : 6dff4b (lighter green?)
 low contrast (dark) text color : #171717 (gris très foncé)
-grey : (un gris très pâle et un gris moyen)
-peut être un bleu pour les highlights? ou orange si wild
-
-background : noir, peut-être gris/texturé pour des sections
-boutons en vert contrastant qui fitte dans la palette
-
-couleurs de travail : gris foncé #171717, gris pâle #969696
  */
 
  /*
- pixel operator :
+pixel operator cheat sheet :
 ref : https://fontlibrary.org/en/font/pixel-operator
 Standard : PixelOperatorRegular
 Standard bold : PixelOperatorBold
@@ -45,26 +24,26 @@ Autre forme de bold : PixelOperatorHBRegular
 Mono (texte plus espacé) :PixelOperatorMonoRegular
 Même chose mais bold : PixelOperatorMonoHBRegular
 Texte ++ espacé : PixelOperatorMono8Regular
-
 Standard petites majuscules : PixelOperatorSCRegular
 Petites majuscules bold : PixelOperatorHBSCRegular
-
   */
 
-  ::selection {
-      color: white;
-      background: #0fc900;
-    }
-
+::selection {
+    color: white;
+    background: #0fc900;
+  }
 
 html {
   font-size: 20px;
+  min-height: 100%;
+  cursor: url("cursorsmall.svg"), default;
 }
+/* fix cursor file so that it works */
 
 body {
   background-color: black;
   color : #0fc900;
-  font-family: 'PixelOperatorRegular';
+  font-family: 'PixelOperatorRegular', 'Courier New', monospace;
   line spacing : 2rem;
 }
 
@@ -74,10 +53,6 @@ main {
   margin: auto;
 }
 
-.paddingtop {
-  padding-top: 3rem;
-}
-
 img {
   width: 100%;
   border: 1px solid #0fc900;
@@ -85,13 +60,19 @@ img {
   margin: auto;
 }
 
+.padding-top {
+  padding-top: 3rem;
+}
 
-/* ********************** text styles */
+
+/******************************************
+/* TEXT STYLES
+/*******************************************/
 
 a {
   color : #0fc900;
   text-decoration: none;
-  font-family: 'PixelOperatorMonoHBRegular';
+  font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
 }
 
 a:hover{
@@ -112,13 +93,13 @@ em {
 
 h1 {
   font-size: 2.25rem;
-  font-family: 'PixelOperatorMonoHBRegular';
+  font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
   padding: 2rem;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: 'PixelOperatorMonoHBRegular';
+  font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
   padding : 3%;
 }
 
@@ -136,12 +117,8 @@ p {
   padding : 1%;
 }
 
-.rightAll {
+.right-all {
   text-align: right;
-}
-
-.leftAll {
-  text-align: left;
 }
 
 .center {
@@ -160,14 +137,17 @@ p {
   padding-left: 1rem;
 }
 
-.out {
+.sold-out {
   text-decoration: line-through;
 }
 
-/* ************forms et boutons */
+
+/******************************************
+/* FORM
+/*******************************************/
 
 label {
-  font-family: 'PixelOperatorMonoHBRegular';
+  font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
   font-size: 1.25rem;
   display: inline-block;
   padding-left: 5%;
@@ -190,7 +170,7 @@ textarea {
   margin:auto;
 }
 
-.formLine {
+.form-line {
   padding-top: 0.5rem;
   width: 100%;
 }
@@ -203,7 +183,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 
 input[type=submit]{
   background-color: #0fc900;
-  font-family: 'PixelOperatorMonoHBRegular';
+  font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
   font-size: 1.25rem;
   height: 1.5rem;
   width: 8rem;
@@ -220,7 +200,8 @@ input[type=submit]:hover{
 /* LAYOUT
 /*******************************************/
 
-/* *********************header */
+
+/* HEADER AND NAV */
 
 
 #header {
@@ -253,9 +234,7 @@ nav li {
 
 
 
-/* couleurs et contraste : revoir à la fin */
-
-/* ********************** footer */
+/* FOOTER */
 
 footer {
   background-color: #171717;
@@ -272,10 +251,7 @@ footer ul {
 }
 
 
-
-
-
-/* ******************GRID */
+/* GRID (SHOP GALLERY) */
 
 .grid-container {
   display : grid;
@@ -290,7 +266,7 @@ footer ul {
 }
 
 
-/* ***************** flexbox */
+/* FLEXBOX */
 
 .flex-container {
   display: flex;
@@ -299,8 +275,6 @@ footer ul {
   column-gap: 2rem;
   align-items: center;
 }
-
-
 
 .flex-1 {
   flex: 1;
@@ -326,13 +300,14 @@ footer ul {
 }
 
 
-/* ***********autres */
+/* MISC? */
+
 .poeme {
   display: block;
   margin: auto;
   font-size: 1.5rem;
 }
-/* pourquoi ça marche pas?? */
+
 .web {
   width: 50%;
   margin-left: 50%;
@@ -344,30 +319,14 @@ footer ul {
   margin: auto;
 }
 
-/*
-autre trucs de layout à faire :
-
--relire pour best practices/clean up
--reformat/choix/taille image méduso
--media queries index (3 tailles)
--photo et texte apocalypse
--choix photos gallerie en bas
-
-ensuite :
--page anglais (exactement la même chose mais en anglais)
--page Infos (écrire textes, layout semblable mais adapté)
-etc
-
- */
-
-
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* media queries */
+/* MEDIA QUERIES */
 
+/* tablet */
 @media all and (max-width: 850px) {
 
   .hidden {
@@ -380,7 +339,7 @@ etc
     gap : 1.5rem;
   }
 
-  .noFlexWhenSmall {
+  .no-flex-when-small {
     display : block;
   }
 
@@ -401,17 +360,10 @@ etc
     margin-top: 2rem;
   }
 
-  header {
-
-  }
-
-  footer {
-
-  }
 }
 
 
-
+/* phone */
 @media all and (max-width: 480px) {
 
   .hidden2 {
@@ -446,10 +398,4 @@ etc
     width: 85%;
     margin-left: 15%;
   }
-
-
-
-/* vérifier que ça marche sur un vrai petit écran de cell */
-
-
 }
