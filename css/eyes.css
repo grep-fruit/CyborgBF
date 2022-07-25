@@ -1,0 +1,70 @@
+/* glowing eyes CSS, made smaller version for website footer*/
+
+.eyes {
+  height: 70px;
+  width: 70px;
+  background: #0fc900;
+  border-radius: 100% 0;
+  transform: rotate(45deg);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: glow-eyes;
+}
+
+.pupil {
+  height: 30px;
+  width: 30px;
+  background: black;
+  border-radius: 100% 0;
+  transform: translate(20px, 20px) rotate(90deg);
+}
+
+.space {
+  height: 70px;
+  width: 70px;
+}
+
+.flex {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes glow-eyes {
+  0% {
+    box-shadow: 0 0 5px 3px #0fc900;
+  }
+  10% {
+    box-shadow: 0 0 10px 3px #0fc900;
+  }
+  20% {
+    box-shadow: 0 0 15px 3px #0fc900;
+  }
+  30% {
+    box-shadow: 0 0 20px 3px #0fc900;
+  }
+  40% {
+    box-shadow: 0 0 25px 3px #0fc900;
+  }
+  50% {
+    box-shadow: 0 0 30px 3px #0fc900;
+  }
+  60% {
+    box-shadow: 0 0 25px 3px #0fc900;
+  }
+  70% {
+  box-shadow: 0 0 20px 3px #0fc900;
+  }
+  80% {
+  box-shadow: 0 0 15px 3px #0fc900;
+  }
+  90% {
+  box-shadow: 0 0 10px 3px #0fc900;
+  }
+  100% {
+    box-shadow: 0 0 5px 3px #0fc900;
+  }
+}
