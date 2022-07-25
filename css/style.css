@@ -58,6 +58,8 @@ img {
   border: 2px groove #0fc900;
   display: block;
   margin: auto;
+  /* max-width: 550px;
+  max-height: 550px; */
 }
 
 .clicktoenlarge:hover {
@@ -81,6 +83,7 @@ a {
 
 a:hover{
   color : #6dff4b;
+  text-decoration: line-through;
 }
 
 .current a {
@@ -99,6 +102,11 @@ h1 {
   font-size: 2.25rem;
   font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
   padding: 2rem;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: #0fc900;
 }
 
 h2 {
