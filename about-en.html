@@ -12,18 +12,19 @@
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pixel-operator" type="text/css"/>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/eyes.css">
 	</head>
 
 	<body>
 		<!-- Header -->
 		<section id="header">
 			<!--image de bannière -->
-			<h1 class="right-all">Vert Partout / cyborg.bf</h1>
+			<h1 class="right-all"> <a href="https://www.cyborg-bf.com/">Vert Partout / cyborg.bf</a></h1>
 
 			<!-- Nav -->
 			<nav>
 				<ul>
-					<li><a href="index-en.html">Art</a></li>
+					<li><a href="index-en.html">"Shop"</a></li>
 					<li class="current"><a href="about-en.html">Infos</a></li>
 					<li><a href="about.html">Français</a></li>
 				</ul>
@@ -124,6 +125,7 @@
 				<p> make my drawings by hand, often with watercolor or ink. Then I scan them and edit them with <a href="https://www.gimp.org/">GIMP</a>. Collages are often made from pictures I made, and also edited on GIMP. I get them printed and cut them myself.</p>
 				<p>Use Free software.</p>
 				<p>This is a very simple site. If you want to look at the code it's <a href="https://github.com/grep-fruit/CyborgBF">here</a>.</p>
+				<p>It's essentially HTML and CSS, the JavaScript is only for the "click to enlarge" feature on the pictures.</p>
 				<p>Do you want one too? Let me know!</p>
 			</section>
 
@@ -149,22 +151,43 @@
 
 	</main>
 
-		<!-- Footer -->
-		<footer>
-				<div class="right-all">
-					<h4>Vert Partout</h4>
-					<h5><em>homme du Renaissance</em></h5>
-				</div>
-				<div class="right-all">
-					<ul>
-						<li>email : <a href="mailto:vert.p@protonmail.com">vert.p@protonmail.com</a></li>
-						<li>instagram : <a href="https://www.instagram.com/cyborg.bf/">@cyborg.bf</a></li>
-						<li>bibliogram : <a href="https://bibliogram.art/u/cyborg.bf">@cyborg.bf</a></li>
-						<li>mastodon : <a href="https://tech.lgbt/web/@grepfruit">grepfruit@tech.lgbt</a></li>
-						<li>threadless shop : <a href="https://cyborgbf.threadless.com/">ici</a> </li>
-					</ul>
-				</div>
-		</footer>
+	<!-- Footer -->
+<footer class="flex-container">
+	<!-- glowing eyes -->
+	<section class="flex">
+		<div class="eyes">
+			<div class="pupil">
+
+			</div>
+		</div>
+		<div class="space">
+
+		</div>
+		<div class="eyes">
+			<div class="pupil">
+
+			</div>
+		</div>
+	</section>
+
+	<!-- rest of footer information -->
+	<section>
+		<div class="right-all">
+			<h4>Vert Partout</h4>
+			<h5><em>homme du Renaissance</em></h5>
+		</div>
+		<div class="right-all">
+			<ul>
+				<li>email : <a href="mailto:vert.p@protonmail.com">vert.p@protonmail.com</a></li>
+				<li>instagram : <a href="https://www.instagram.com/cyborg.bf/">@cyborg.bf</a></li>
+				<li>bibliogram : <a href="https://bibliogram.art/u/cyborg.bf">@cyborg.bf</a></li>
+				<li>mastodon : <a rel="me" href="https://tech.lgbt/web/@grepfruit">grepfruit@tech.lgbt</a></li>
+				<li>threadless shop : <a href="https://cyborgbf.threadless.com/">ici</a> </li>
+			</ul>
+		</div>
+	</section>
+
+</footer>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

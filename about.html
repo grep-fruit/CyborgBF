@@ -12,18 +12,19 @@
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pixel-operator" type="text/css"/>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/eyes.css">
 	</head>
 
 	<body>
 		<!-- Header -->
 		<section id="header">
 			<!--banner image -->
-			<h1 class="right-all">Vert Partout / cyborg.bf</h1>
+			<h1 class="right-all"> <a href="https://www.cyborg-bf.com/">Vert Partout / cyborg.bf</a></h1>
 
 			<!-- Nav -->
 			<nav>
 				<ul>
-					<li><a href="index.html">Art</a></li>
+					<li><a href="index.html">"Boutique"</a></li>
 					<li class="current"><a href="about.html">Infos</a></li>
 					<li><a href="about-en.html">English</a></li>
 				</ul>
@@ -129,8 +130,10 @@
 				<p>Je fais mes dessins d'abord à la main, souvent à l'aquarelle ou à l'encre. Ensuite je les numérise et je les retravaille sur <a href="https://www.gimp.org/">GIMP</a>. Les montages sont souvent faits à partir de photos que j'ai prises, puis modifiées sur GIMP également. Je les fais imprimer puis je les découpe moi-même.</p>
 				<p>Utilisez des logiciels libres.</p>
 				<p>Ceci est un site tout simple. Si vous voulez voir le code il est <a href="https://github.com/grep-fruit/CyborgBF">ici</a>.</p>
+				<p>C'est essentiellement du HTML et du CSS, le JavaScript ne sert qu'à la fonction d'agrandir les images quand on clique dessus.</p>
 				<p>En veux tu un toi aussi? Écris-moi!</p>
 			</section>
+
 
 
 
@@ -156,22 +159,43 @@
 
 	</main>
 
-		<!-- Footer -->
-		<footer>
-				<div class="right-all">
-					<h4>Vert Partout</h4>
-					<h5><em>homme du Renaissance</em></h5>
-				</div>
-				<div class="right-all">
-					<ul>
-						<li>email : <a href="mailto:vert.p@protonmail.com">vert.p@protonmail.com</a></li>
-						<li>instagram : <a href="https://www.instagram.com/cyborg.bf/">@cyborg.bf</a></li>
-						<li>bibliogram : <a href="https://bibliogram.art/u/cyborg.bf">@cyborg.bf</a></li>
-						<li>mastodon : <a href="https://tech.lgbt/web/@grepfruit">grepfruit@tech.lgbt</a></li>
-						<li>threadless shop : <a href="https://cyborgbf.threadless.com/">ici</a> </li>
-					</ul>
-				</div>
-		</footer>
+	<!-- Footer -->
+<footer class="flex-container">
+	<!-- glowing eyes -->
+	<section class="flex">
+		<div class="eyes">
+			<div class="pupil">
+
+			</div>
+		</div>
+		<div class="space">
+
+		</div>
+		<div class="eyes">
+			<div class="pupil">
+
+			</div>
+		</div>
+	</section>
+
+	<!-- rest of footer information -->
+	<section>
+		<div class="right-all">
+			<h4>Vert Partout</h4>
+			<h5><em>homme du Renaissance</em></h5>
+		</div>
+		<div class="right-all">
+			<ul>
+				<li>email : <a href="mailto:vert.p@protonmail.com">vert.p@protonmail.com</a></li>
+				<li>instagram : <a href="https://www.instagram.com/cyborg.bf/">@cyborg.bf</a></li>
+				<li>bibliogram : <a href="https://bibliogram.art/u/cyborg.bf">@cyborg.bf</a></li>
+				<li>mastodon : <a rel="me" href="https://tech.lgbt/web/@grepfruit">grepfruit@tech.lgbt</a></li>
+				<li>threadless shop : <a href="https://cyborgbf.threadless.com/">ici</a> </li>
+			</ul>
+		</div>
+	</section>
+
+</footer>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
