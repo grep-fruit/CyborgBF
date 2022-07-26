@@ -3,8 +3,6 @@
 
 // TODO :
 // - centrer les images
-// ensuite moins urgent :
-// - assombrir le background quand l'overlay est ouvert
 
 
 var rand = Math.floor(Math.random() * 1000);
@@ -16,6 +14,8 @@ var newHeight = 0;
 
 // offset between window and image
 // used for centering
+
+//est-ce utile pour moi?
 var offsetx = 0;
 var offsety = 0;
 
@@ -43,10 +43,9 @@ function init131() {
             var img = document.createElement("img");
 
             // this styles the border that shows up when the image is enlarged, the overlay and the X button
-            div.style.cssText = "position:fixed;z-index:2000;border:ridge 4px #0fc900;border-radius:0px;overflow:hidden;background:none;text-align:center;";
-            // changed it for background: none
-            overlay.style.cssText = "background:none;opacity:.8;position:fixed;top:0px;width:100%;height:1000px;z-index:1000;left:0px;";
-            close.style.cssText = "background:#0fc900;color:black;cursor:pointer;position:absolute;top:0px;right:0px;font-size:20pt;width:30px;height:30px;border-radius:50%;text-align:center;";
+            div.style.cssText = "position:fixed;z-index:2000;overflow:hidden;background:black;text-align:center;";
+            overlay.style.cssText = "background:black;opacity:.8;position:fixed;top:0px;width:100%;height:1000px;z-index:1000;left:0px;";
+            close.style.cssText = "color:#0fc900;cursor:pointer;position:absolute;top:0px;right:0px;font-size:20pt;width:30px;height:30px;border-radius:50%;text-align:center;";
 
             overlay.className = "overlay_" + rand;
             div.className = "clicktoenlarge_" + rand;
@@ -62,7 +61,8 @@ function init131() {
                 // original version :
                 // div.style.width = maxWidth + "px";
                 //I removed '+ "px" ' and it fixed the problem of the image stretching. now the image keeps its original ratio
-                div.style.width = maxWidth;
+                // div.style.width = maxWidth;
+                //dans le fond je peux juste le supprimer au complet pcq ce que enlever "+px" ça fait c'est juste que la règle s'applique pu
                 div.style.height = maxHeight + "px";
             }
 
@@ -70,8 +70,8 @@ function init131() {
                 newWidth = this.naturalWidth;
                 newHeight = this.naturalHeight;
 
-                div.style.width = this.naturalWidth + "px";
-                div.style.height = this.NaturalHeight;
+                // div.style.width = this.naturalWidth + "px";
+                div.style.height = this.NaturalHeight + "px";
                 //also removed + px here
             }
 
@@ -79,17 +79,16 @@ function init131() {
             //original version:
             //div.style.width = img.style.width + "px";
             //I removed '+ "px" ' and it fixed the problem of the image stretching. now the image keeps its original ratio. It does not adapt well when screen height is very low, but that will do for now, since people rarely have a screen that is very wide but very low.
-            div.style.width = img.style.width;
+            // div.style.width = img.style.width;
 
             offsetx = Math.floor((window.innerWidth - newWidth) / 2);
-            //offsetx = Math.floor(window.innerWidth - newWidth); essayé d'enlever le /2 : c'est un peu moins pire mais pas réglé et ça bug sur mobile.
             offsety = Math.floor((window.innerHeight - newHeight) / 2);
 
             div.style.top = offsety + "px";
             div.style.left = offsetx + "px";
 
 
-            close.innerHTML = "x";
+            close.innerHTML = "&#127335;";
             close.addEventListener('click', function () {
                 var overlay = document.querySelector(".overlay_" + rand);
                 var clicktoenlarge = document.querySelector(".clicktoenlarge_" + rand);
