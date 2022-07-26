@@ -1,6 +1,6 @@
 ### This is just the code from my website where I show my art stuff. 
 
-For now I've kept it pretty simple. It's just HTML and CSS.
+For now I've kept it pretty simple.
 
 Eventually I'll add more features, but not many.
 
