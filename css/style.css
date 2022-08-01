@@ -34,7 +34,7 @@ Petites majuscules bold : PixelOperatorHBSCRegular
   }
 
 html {
-  font-size: 20px;
+  font-size: 20px;La police utilisée est
   min-height: 100%;
   cursor: url("cursorsmall.svg"), default;
 }
@@ -370,6 +370,10 @@ footer ul {
 
   .round{
     margin-top: 2rem;
+  }
+
+  footer section {
+    padding-top: 2rem;
   }
 
 }
