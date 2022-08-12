@@ -3,7 +3,7 @@
 var speed=50; // lower number for faster
 var warp=3; // from 1 to 10
 var stars=150; // number of stars
-var colours=new Array("#0fc900", "#0fc900", "#0fc900"); // colours of stars
+var colours=new Array("#0fc900", "#c3ff65", "#6dff4b"); // colours of stars
 var position=-1; // set to '0' for foreground and '-1' for stars to appear in the background, behind text on the page
 
 /****************************
