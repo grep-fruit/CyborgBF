@@ -15,6 +15,8 @@ Add clicktrough slides for stickers/prints/zines
 
 Fill up the links page with cool links
 
+Make a favicon that actually looks good
+
 ### Licencing stuff
 
 ART : Images of art, pictures and poetry (content in general) is mine. You can show it to people, but you have to let me know and credit me by linking to this website. 
