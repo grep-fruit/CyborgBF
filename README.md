@@ -2,8 +2,6 @@
 
 For now I've kept it pretty simple.
 
-Eventually I'll add more features, but not many.
-
 I'm putting this here so that you can look at it, if you want.
 
 ### List of stuff I'm going to do next
@@ -14,6 +12,8 @@ Add a Gallery tab with a gallery of different stuff I made
 Fix the "clicktoenlarge" so that it is centered properly
 
 Add clicktrough slides for stickers/prints/zines
+
+Fill up the links page with cool links
 
 ### Licencing stuff
 
