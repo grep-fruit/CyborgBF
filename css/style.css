@@ -264,7 +264,7 @@ nav li {
         box-sizing: border-box;
         display: block;
         width: 100%;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px dotted #6dff4b;
       }
 
       /* (B) SHOW HAMBURGER ICON */
@@ -282,6 +282,8 @@ nav li {
       /* (C) TOGGLE SHOW/HIDE MENU */
       #hamitems { display: none; }
       #hamnav input:checked ~ #hamitems { display: block; }
+
+
     }
 
 
@@ -393,6 +395,8 @@ footer ul {
 }
 
 
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -472,7 +476,11 @@ footer ul {
   }
 
   .web {
-    width: 85%;
-    margin-left: 15%;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  #index #glowing-eyes {
+    display: none;
   }
 }
