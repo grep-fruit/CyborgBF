@@ -374,6 +374,25 @@ footer ul {
 }
 
 
+
+/* *********** index page only ************* */
+
+#index {
+  height: 100vh;
+}
+
+#index footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: none;
+}
+
+#index #header {
+  background: none;
+}
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
