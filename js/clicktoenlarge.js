@@ -1,8 +1,6 @@
 // this script comes from here : https://www.thatsoftwaredude.com/content/6385/click-to-enlarge-script-with-pure-javascript
 // I modified it, but mostly for styling rather than function
 
-// TODO :
-// - centrer les images
 
 
 var rand = Math.floor(Math.random() * 1000);
@@ -14,9 +12,7 @@ var newHeight = 0;
 
 // offset between window and image
 // used for centering
-
-//est-ce utile pour moi?
-// quand je change offsetx pour un nb de pixels, le script au complet arrête de marcher
+// I know the centering is no longer working. I had to change all the width settings, because otherwise it would stretch the images. The consequence of that is that the centering no longer works.
 var offsetx = 0;
 var offsety = 0;
 
@@ -45,14 +41,13 @@ function init131() {
 
             // this styles the border that shows up when the image is enlarged, the overlay and the X button
             div.style.cssText = "position:fixed;z-index:2000;overflow:hidden;background:black;text-align:center;margin-left:25%";
-            //jusqu'à date le mieux que j'ai trouvé c'est margin-left 25%, c'est pas centré mais c'est relativement proche d'être centré
+            // margin-left:25% is a temporary solution
             overlay.style.cssText = "background:black;opacity:.8;position:fixed;top:0px;width:100%;height:1000px;z-index:1000;left:0px;";
             // close.style.cssText = "color:#0fc900;cursor:pointer;position:absolute;top:0px;right:0px;font-size:20pt;width:30px;height:30px;border-radius:50%;text-align:center;";
-            // fait que le "close" est styled par le css dans overlay.css . je n'arrive pas à faire la même chose avec le div et le overlay
+            // transfered "close" styling to a css file. Will do the same with the styling of the overlay as well.
             close.classList.add('close')
 
-            // essai : comment out + rand pour voir ce que ça change
-            // for some reason, quand je fais ça le clic pour le x ne marche plus
+
             // overlay.className = "overlay_" + rand;
             overlay.className = "overlay_" + rand;
             div.className = "clicktoenlarge_" + rand;
@@ -67,9 +62,7 @@ function init131() {
 
                 // original version :
                 // div.style.width = maxWidth + "px";
-                //I removed '+ "px" ' and it fixed the problem of the image stretching. now the image keeps its original ratio
-                // div.style.width = maxWidth;
-                //dans le fond je peux juste le supprimer au complet pcq ce que enlever "+px" ça fait c'est juste que la règle s'applique pu
+                //I removed this and it fixed the problem of the image stretching. now the image keeps its original ratio
                 div.style.height = maxHeight + "px";
             }
 
@@ -84,8 +77,6 @@ function init131() {
 
             img.style.maxHeight = div.style.height;
             //original version:
-            //div.style.width = img.style.width + "px";
-            //I removed '+ "px" ' and it fixed the problem of the image stretching. now the image keeps its original ratio. It does not adapt well when screen height is very low, but that will do for now, since people rarely have a screen that is very wide but very low.
             // div.style.width = img.style.width;
 
             offsetx = Math.floor((window.innerWidth - newWidth) / 2);
