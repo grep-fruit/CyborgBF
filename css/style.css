@@ -216,7 +216,7 @@ input[type=submit]:hover{
 /* HEADER AND NAV */
 
 
-#header {
+header {
   background-image: url("banner2.jpg");
   background-position: center;
   background-size: cover;
@@ -224,7 +224,7 @@ input[type=submit]:hover{
   background-color: black;
 }
 
-#header h1 {
+header h1 {
   padding: 2.5rem 5%;
 }
 
@@ -390,7 +390,7 @@ footer ul {
   background: none;
 }
 
-#index #header {
+#index header {
   background: none;
 }
 
@@ -424,7 +424,7 @@ footer ul {
     width: 100%;
   }
 
-  #header h1{
+  header h1{
     max-width: 20rem;
     margin: auto 0 auto auto;
   }
@@ -461,7 +461,7 @@ footer ul {
     text-align: center;
   }
 
-  #header h1 {
+  header h1 {
     padding : 1rem 5%;
   }
 
