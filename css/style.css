@@ -396,6 +396,39 @@ footer ul {
 
 
 
+/* surprise and secret */
+
+.surprise, .secret {
+  letter-spacing: 12px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0;
+  opacity: 0;
+}
+
+.surprise-container, .secret-container {
+  padding: 3rem 15%;
+}
+
+.surprise {
+  color: yellow;
+}
+
+.secret-container {
+padding-left: 70%;
+}
+
+.secret {
+  color: cyan;
+}
+
+.surprise:hover{
+  opacity: 1;
+}
+
+.secret:hover{
+  opacity: 1;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
