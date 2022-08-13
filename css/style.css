@@ -34,9 +34,9 @@ Petites majuscules bold : PixelOperatorHBSCRegular
   }
 
 html {
-  font-size: 20px;La police utilisée est
+  font-size: 20px;
   min-height: 100%;
-  cursor: url("cursorsmall.svg"), default;
+
 }
 /* fix cursor file so that it works */
 
@@ -364,10 +364,6 @@ footer ul {
   font-size: 1.5rem;
 }
 
-.web {
-  width: 60%;
-  margin-left: 40%;
-}
 
 .half {
   width: 50%;
@@ -429,6 +425,34 @@ padding-left: 70%;
 .secret:hover{
   opacity: 1;
 }
+
+/* Web badges */
+
+.small-badges img {
+  border: none;
+  width: 80px;
+  height: 15px;
+  margin: 10px;
+}
+
+.medium-badges img {
+  border: none;
+  width: 88px;
+  height: 31px;
+  margin: 10px;
+}
+
+.badges div {
+  justify-content: center;
+  column-gap: 0;
+}
+
+#ownwebsite {
+  width : 103px;
+  height : 59px;
+  border: none;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -508,10 +532,6 @@ padding-left: 70%;
     justify-content: space-around;
   }
 
-  .web {
-    width: 90%;
-    margin-left: 10%;
-  }
 
   #index #glowing-eyes {
     display: none;
