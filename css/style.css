@@ -1,5 +1,3 @@
-
-
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -8,14 +6,12 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
 /*
 basic text color : 0fc900 (bright green)
 light text color : 6dff4b (lighter green?)
 low contrast (dark) text color : #171717 (gris très foncé)
  */
-
- /*
+/*
 pixel operator cheat sheet :
 ref : https://fontlibrary.org/en/font/pixel-operator
 Standard : PixelOperatorRegular
@@ -27,24 +23,22 @@ Texte ++ espacé : PixelOperatorMono8Regular
 Standard petites majuscules : PixelOperatorSCRegular
 Petites majuscules bold : PixelOperatorHBSCRegular
   */
-
 ::selection {
-    color: white;
-    background: #0fc900;
-  }
+  color: white;
+  background: #0fc900;
+}
 
 html {
   font-size: 20px;
   min-height: 100%;
-
 }
-/* fix cursor file so that it works */
 
+/* fix cursor file so that it works */
 body {
   background-color: black;
-  color : #0fc900;
+  color: #0fc900;
   font-family: 'PixelOperatorRegular', 'Courier New', monospace;
-  line spacing : 2rem;
+  line spacing: 2rem;
 }
 
 main {
@@ -70,24 +64,22 @@ img {
   padding-top: 4rem;
 }
 
-
 /******************************************
 /* TEXT STYLES
 /*******************************************/
-
 a {
-  color : #0fc900;
+  color: #0fc900;
   text-decoration: none;
   font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
 }
 
-a:hover{
-  color : #6dff4b;
+a:hover {
+  color: #6dff4b;
   text-decoration: line-through;
 }
 
 .current a {
-  color : #6dff4b;
+  color: #6dff4b;
 }
 
 strong {
@@ -112,21 +104,21 @@ h1 a:hover {
 h2 {
   font-size: 2rem;
   font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
-  padding : 3%;
+  padding: 3%;
 }
 
 h3 {
   font-size: 1.5rem;
-  padding : 2%;
+  padding: 2%;
 }
 
 h4 {
   font-size: 1.25rem;
-  padding : 1%;
+  padding: 1%;
 }
 
 p {
-  padding : 1%;
+  padding: 1%;
 }
 
 .right-all {
@@ -153,11 +145,9 @@ p {
   text-decoration: line-through;
 }
 
-
 /******************************************
 /* FORM
 /*******************************************/
-
 label {
   font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
   font-size: 1.25rem;
@@ -168,7 +158,7 @@ label {
 input, textarea {
   background-color: #6dff4b;
   border: none;
-  resize : vertical;
+  resize: vertical;
 }
 
 input {
@@ -179,7 +169,7 @@ input {
 textarea {
   width: 90%;
   display: block;
-  margin:auto;
+  margin: auto;
 }
 
 .form-line {
@@ -187,13 +177,12 @@ textarea {
   width: 100%;
 }
 
-input[type=text]:focus, input[type=email]:focus, textarea:focus{
-  outline : none;
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  outline: none;
   border: 2px solid #0fc900;
 }
 
-
-input[type=submit]{
+input[type=submit] {
   background-color: #0fc900;
   font-family: 'PixelOperatorMonoHBRegular', 'Courier New', monospace;
   font-size: 1.25rem;
@@ -203,19 +192,14 @@ input[type=submit]{
   margin: auto;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
   background-color: #6dff4b;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-
 /* HEADER AND NAV */
-
-
 header {
   background-image: url("banner2.jpg");
   background-position: center;
@@ -229,7 +213,7 @@ header h1 {
 }
 
 nav {
-  padding : 0.5rem 5% 1.5rem 5%;
+  padding: 0.5rem 5% 1.5rem 5%;
 }
 
 nav ul {
@@ -246,52 +230,49 @@ nav li {
 
 /* The responsive hamburger menu was adapted from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
     See license file for its license */
-    /* (B) HORIZONTAL MENU ITEMS */
-    #hamitems {
-      display: flex;
-    }
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
 
+/* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger {
+  display: none;
+}
 
-    /* (C) HIDE HAMBURGER */
-    #hamnav label, #hamburger {
-      display: none;
-    }
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 850px) {
 
-    /* [ON SMALL SCREENS] */
-    @media screen and (max-width: 850px){
-      /* (A) BREAK INTO VERTICAL MENU */
-      #hamitems a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-bottom: 1px dotted #6dff4b;
-      }
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-bottom: 1px dotted #6dff4b;
+  }
 
-      /* (B) SHOW HAMBURGER ICON */
-      #hamnav label {
-        display: inline-block;
-        color: black;
-        background: #0fc900;
-        font-style: normal;
-        font-size: 1.2em;
-        padding: 10px;
-      }
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: black;
+    background: #0fc900;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
 
-    /* need to make hamburger icon stay visible (sticky) */
+  /* need to make hamburger icon stay visible (sticky) */
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+  }
 
-      /* (C) TOGGLE SHOW/HIDE MENU */
-      #hamitems { display: none; }
-      #hamnav input:checked ~ #hamitems { display: block; }
-
-
-    }
-
-
-
-
+  #hamnav input:checked~#hamitems {
+    display: block;
+  }
+}
 
 /* FOOTER */
-
 footer {
   background-color: #171717;
   padding: 2% 5%;
@@ -306,27 +287,23 @@ footer ul {
   padding-top: 1.5rem;
 }
 
-
 /* GRID (SHOP GALLERY) */
-
 .grid-container {
-  display : grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap : 1.5rem;
+  gap: 1.5rem;
 }
 
 .grid-container-hor {
-  display : grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap : 1.5rem;
+  gap: 1.5rem;
 }
 
-
 /* FLEXBOX */
-
 .flex-container {
   display: flex;
-  flex-direction : row;
+  flex-direction: row;
   justify-content: space-between;
   column-gap: 2rem;
   align-items: center;
@@ -338,7 +315,7 @@ footer ul {
 }
 
 .flex-2 {
-  flex : 2;
+  flex: 2;
   align-self: center;
 }
 
@@ -352,18 +329,15 @@ footer ul {
   max-width: 400px;
   margin: auto;
   border-radius: 200px;
-  border : none;
+  border: none;
 }
 
-
 /* MISC? */
-
 .poeme {
   display: block;
   margin: auto;
   font-size: 1.5rem;
 }
-
 
 .half {
   width: 50%;
@@ -371,10 +345,7 @@ footer ul {
   margin: auto;
 }
 
-
-
 /* *********** index page only ************* */
-
 #index {
   height: 100vh;
 }
@@ -390,10 +361,7 @@ footer ul {
   background: none;
 }
 
-
-
 /* surprise and secret */
-
 .surprise, .secret {
   letter-spacing: 12px;
   font-weight: bold;
@@ -411,23 +379,22 @@ footer ul {
 }
 
 .secret-container {
-padding-left: 70%;
+  padding-left: 70%;
 }
 
 .secret {
   color: cyan;
 }
 
-.surprise:hover{
+.surprise:hover {
   opacity: 1;
 }
 
-.secret:hover{
+.secret:hover {
   opacity: 1;
 }
 
 /* Web badges */
-
 .small-badges img {
   border: none;
   width: 80px;
@@ -448,44 +415,37 @@ padding-left: 70%;
 }
 
 #ownwebsite {
-  width : 103px;
-  height : 59px;
+  width: 103px;
+  height: 59px;
   border: none;
 }
 
-
 /* responsiveness : make that section appear after the text instead of before! */
-
-
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
 /* MEDIA QUERIES */
-
 /* tablet */
 @media all and (max-width: 850px) {
-
   .hidden {
     display: none;
   }
 
   .grid-container {
-    display : grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap : 1.5rem;
+    gap: 1.5rem;
   }
 
   .no-flex-when-small {
-    display : block;
+    display: block;
   }
 
   .half {
     width: 100%;
   }
 
-  header h1{
+  header h1 {
     max-width: 20rem;
     margin: auto 0 auto auto;
   }
@@ -494,28 +454,25 @@ padding-left: 70%;
     margin-top: 2rem;
   }
 
-  .round{
+  .round {
     margin-top: 2rem;
   }
 
   footer section {
     padding-top: 2rem;
   }
-
 }
-
 
 /* phone */
 @media all and (max-width: 480px) {
-
   .hidden2 {
     display: none;
   }
 
   .grid-container {
-    display : grid;
+    display: grid;
     grid-template-columns: 1fr;
-    gap : 1.5rem;
+    gap: 1.5rem;
   }
 
   h2 {
@@ -523,10 +480,10 @@ padding-left: 70%;
   }
 
   header h1 {
-    padding : 1rem 5%;
+    padding: 1rem 5%;
   }
 
-  nav{
+  nav {
     padding: 0rem 5% 0.5rem 5%;
   }
 
@@ -535,7 +492,6 @@ padding-left: 70%;
     flex-direction: row;
     justify-content: space-around;
   }
-
 
   #index #glowing-eyes {
     display: none;
