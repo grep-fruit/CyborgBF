@@ -432,7 +432,6 @@ footer ul {
 .links p {
   padding-left: 5%;
   font-weight: bold;
-
 }
 
 .links section {
@@ -483,6 +482,10 @@ footer ul {
     margin-top: 2rem;
   }
 
+  .links section {
+    width : 90%;
+  }
+
   footer section {
     padding-top: 2rem;
   }
@@ -509,8 +512,16 @@ footer ul {
     text-align: center;
   }
 
-  h2.links {
+  .links h2 {
     font-size: 1.5rem;
+  }
+
+  .links section {
+    width : 100%;
+  }
+
+  .links p {
+    padding-left: 0;
   }
 
   header h1 {
@@ -530,4 +541,6 @@ footer ul {
   #index #glowing-eyes {
     display: none;
   }
+
+
 }
