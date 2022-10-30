@@ -310,7 +310,7 @@ footer ul {
 }
 
 .flex-1 {
-  flex: 1;
+  flex: 1; class="padding-top"
   align-self: center;
 }
 
@@ -420,6 +420,26 @@ footer ul {
   border: none;
 }
 
+.links a {
+  color: rgb(212, 255, 0);
+  letter-spacing: 3px;
+}
+
+.links h2, .links h3 {
+  padding-top: 3rem;
+}
+
+.links p {
+  padding-left: 5%;
+  font-weight: bold;
+
+}
+
+.links section {
+  width : 75%;
+  margin: auto;
+}
+
 /* responsiveness : make that section appear after the text instead of before! */
 /******************************************
 /* ADDITIONAL STYLES
@@ -487,6 +507,10 @@ footer ul {
 
   h2 {
     text-align: center;
+  }
+
+  h2.links {
+    font-size: 1.5rem;
   }
 
   header h1 {
